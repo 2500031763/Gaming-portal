@@ -1,0 +1,47 @@
+/* ============================= BUTTONS & BADGES ============================= */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:var(--radius-sm);font-weight:700;font-size:14.5px;transition:all .15s ease;white-space:nowrap;border:1px solid transparent}
+.btn svg{width:16px;height:16px}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 24px -8px rgba(201,162,77,0.45)}
+.btn-secondary{background:transparent;border-color:var(--border-strong);color:var(--text)}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.btn-ghost{background:transparent;color:var(--text-muted);padding:10px 16px}
+.btn-ghost:hover{color:var(--text);background:var(--bg-elevated)}
+.btn-danger-line{border:1px solid var(--border-strong);color:var(--danger)}
+.btn-danger-line:hover{border-color:var(--danger);background:var(--danger-soft)}
+.btn-success-line{border:1px solid var(--border-strong);color:var(--success)}
+.btn-success-line:hover{border-color:var(--success);background:var(--success-soft)}
+.btn-block{width:100%}
+.btn-sm{padding:8px 14px;font-size:13px;border-radius:var(--radius-xs)}
+.btn-xs{padding:5px 10px;font-size:11.5px;border-radius:var(--radius-xs)}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none!important}
+.icon-btn{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--text-muted);position:relative;transition:all .15s}
+.icon-btn:hover{background:var(--bg-elevated);color:var(--text)}
+.icon-btn .dot-badge{position:absolute;top:6px;right:7px;width:8px;height:8px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+
+.chip-row{display:flex;gap:9px;flex-wrap:wrap}
+.chip{padding:9px 16px;border:1px solid var(--border-strong);border-radius:999px;font-size:13.5px;font-weight:600;color:var(--text-muted);display:inline-flex;align-items:center;gap:7px;transition:all .15s}
+.chip .cdot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.chip:hover{color:var(--text);border-color:var(--text-muted)}
+.chip.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+
+.badge{display:inline-flex;align-items:center;gap:7px;padding:5px 11px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.badge .bdot{width:7px;height:7px;border-radius:50%;background:currentColor;flex-shrink:0}
+.badge-live{background:var(--success-soft);color:var(--success)}
+.badge-live .bdot{animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(63,183,126,.5)}50%{opacity:.6;box-shadow:0 0 0 4px rgba(63,183,126,0)}}
+.badge-open{background:var(--warning-soft);color:var(--warning)}
+.badge-finished{background:var(--danger-soft);color:var(--danger)}
+.badge-upcoming{background:var(--neutral-soft);color:var(--neutral)}
+.badge-pending{background:var(--warning-soft);color:var(--warning)}
+.badge-approved{background:var(--success-soft);color:var(--success)}
+.badge-rejected{background:var(--danger-soft);color:var(--danger)}
+.badge-active{background:var(--success-soft);color:var(--success)}
+.badge-suspended{background:var(--danger-soft);color:var(--danger)}
+.badge-flagged{background:var(--danger-soft);color:var(--danger)}
+.badge-critical{background:rgba(229,85,92,0.2);color:#ff6b72;border:1px solid rgba(229,85,92,0.3)}
+.badge-high{background:rgba(224,166,60,0.2);color:#f5b84c;border:1px solid rgba(224,166,60,0.3)}
+.badge-medium{background:rgba(135,145,166,0.18);color:#a5b2cc}
+.badge-low{background:rgba(63,183,126,0.18);color:#5bd498}
+.badge-admin-role{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-dim);font-size:11px;padding:3px 8px}
+
